@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+
+}
+
+header {
+    display: flex;
+    background-color: rgb(88, 88, 88);
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+div.btnMnu {
+    display: block;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+menu {
+    display: none;
+}
+
+main {
+    display: flex;
+}
+
+footer {
+    background-color: rgb(88, 88, 88);
+}
