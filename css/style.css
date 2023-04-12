@@ -83,6 +83,21 @@ nav ul#button:hover li {
     background: #515152;
 }
 
+main, footer {
+    max-width: 1120px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > section.conteudo, aside.banner {
+    background-color: yellow;
+    width: 100%;
+    min-width: 310px;
+    margin: 2px 0;
+}
+
 @media(min-width: 700px){
 
     nav ul#menu {
@@ -100,5 +115,15 @@ nav ul#button:hover li {
     }
     nav ul#button {
         display: none;
+    }
+
+    main > section.conteudo {
+        width: 55vw;
+
+    }
+
+    main > aside.banner {
+        width: 25vw;
+        margin-left: 2px;
     }
 }
