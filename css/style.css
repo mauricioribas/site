@@ -83,12 +83,12 @@ nav ul#button:hover li {
     background: #515152;
 }
 
-main, footer {
+main {
     max-width: 1120px;
     margin: 0 auto;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 main > section.conteudo, aside.banner {
@@ -117,6 +117,10 @@ main > section.conteudo, aside.banner {
         display: none;
     }
 
+    main {
+        flex-direction: row;
+    }
+    
     main > section.conteudo {
         width: 55vw;
 
