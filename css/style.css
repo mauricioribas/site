@@ -10,14 +10,13 @@
 html, body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    background-color: blue;
 }
 
 header {
     max-width: 1120px;
     height: 75px;
     margin: 0 auto;
-    background-color: rgb(37, 37, 37);
+    background: rgb(37, 37, 37);
 }
 
 nav {
@@ -42,11 +41,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #515152;
+    color: #525252;
 }
 
 nav ul#menu {
-    background-color: rgb(37, 37, 37);
+    background: rgb(37, 37, 37);
     padding: 15px;
     text-align: center;
 
@@ -93,7 +92,6 @@ main {
 }
 
 main > section.conteudo, aside.banner {
-    background-color: yellow;
     width: 100%;
     margin: 2px 0;
 }
@@ -101,6 +99,9 @@ main > section.conteudo, aside.banner {
 footer {
     max-width: 1120px;
     margin: 0 auto;
+    padding: 2px;
+    background-color: rgb(37, 37, 37);
+    color: white;
 }
 
 @media(min-width: 700px){
@@ -124,7 +125,6 @@ footer {
 
     main {
         flex-direction: row;
-        flex-wrap: wrap;
     }
 
     main > section.conteudo {

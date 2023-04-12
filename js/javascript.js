@@ -1,15 +1,7 @@
-let menuIsOpened = false;
-const button = document.querySelector('nav ul#button');
-const menu = document.querySelector('nav ul#menu');
-
-button.addEventListener("click", () => {
-    if (!menuIsOpened) {
-        menu.style.display = 'flex';
-        menuIsOpened = true;
+function clickMenu() {
+    if (menu.style.display == 'flex') {
+        menu.style.display = 'none'
     } else {
-        menu.style.display = 'none';
-        menuIsOpened = false;
+        menu.style.display = 'flex'
     }
-})
-
-button.removeEventListener('click', this.onClick);
+}
