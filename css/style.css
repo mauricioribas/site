@@ -98,6 +98,11 @@ main > section.conteudo, aside.banner {
     margin: 2px 0;
 }
 
+footer {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
 @media(min-width: 700px){
 
     nav ul#menu {
@@ -123,12 +128,13 @@ main > section.conteudo, aside.banner {
     }
 
     main > section.conteudo {
-        width: 65vw;
+        width: 65%;
         padding: 2px;
 
     }
 
     main > aside.banner {
-        width: 35vw;
+        width: 35%;
+        padding: 2px;
     }
 }
