@@ -5,34 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
-    <script src="js/javascript.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="container">
-        <header>
-            <div>logo</div>
-            <div class="btnMnu">botão</div>
-            <menu>Menu</menu>
-        </header>
-        <section>
-            <p>teste</p>
-            <p>teste</p>
-            <p>teste</p>
-            <p>teste</p>
-        </section>
-        <article>
-            <p>teste</p>
-            <p>teste</p>
-            <p>teste</p>
-            <p>teste</p>
-        </article>
-        <aside>
-            aside
-        </aside>
-        <footer>
-            footer
-        </footer>
-    </div>
+
+    <header>
+        <nav>
+            <div id="logo">
+                Logo
+            </div>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Portifolio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <ul id="button">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+       main
+    </main>
+    <footer>
+        footer
+    </footer>
+
+
+    <script>
+        let menuIsOpened = false;
+        const button = document.querySelector('nav ul#button');
+        const menu = document.querySelector('nav ul#menu');
+
+        button.addEventListener("click", () => {
+            if (!menuIsOpened) {
+                menu.style.display = 'flex';
+                menuIsOpened = true;
+            } else {
+                menu.style.display = 'none';
+                menuIsOpened = false;
+            }
+        })
+
+        button.removeEventListener('click', this.onClick);
+    </script>
+
 </body>
 </html>
