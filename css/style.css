@@ -10,6 +10,7 @@
 html, body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    background-color: blue;
 }
 
 header {
@@ -94,7 +95,6 @@ main {
 main > section.conteudo, aside.banner {
     background-color: yellow;
     width: 100%;
-    min-width: 310px;
     margin: 2px 0;
 }
 
@@ -119,15 +119,16 @@ main > section.conteudo, aside.banner {
 
     main {
         flex-direction: row;
+        flex-wrap: wrap;
     }
-    
+
     main > section.conteudo {
-        width: 55vw;
+        width: 65vw;
+        padding: 2px;
 
     }
 
     main > aside.banner {
-        width: 25vw;
-        margin-left: 2px;
+        width: 35vw;
     }
 }
