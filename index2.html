@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media_queries2.css">
+    <script src="js/javascript.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                MRibas
+            </div>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Portifolio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <ul id="button" onclick="clickMenu()">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <article id="conteudo">
+            <div class="card card-1">
+                <img src="imagens/LedZeppelin.jpg" alt="">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos facere eveniet ratione.
+                </p>
+            </div>
+            <div class="artigo">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatem iure repellendus error corrupti quisquam magnam molestiae temporibus quibusdam deserunt id ratione ducimus nisi, cumque accusamus nihil explicabo qui at.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos fuga vitae minima, tenetur qui iste odit est rem atque illum neque pariatur id ab. Veniam quia sit praesentium iusto id.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias doloremque inventore nobis laborum perspiciatis voluptas fugiat quidem tempore quos ducimus dolor est assumenda, omnis, eius modi. Deleniti, deserunt est?
+                </p>
+            </div>
+            <div class="card card-2">
+                <img src="imagens/queenband.png" alt="">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos facere eveniet ratione.
+                </p>
+            </div>
+            <div class="card card-3">
+                <img src="imagens/metallica1.jpg" alt="">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos facere eveniet ratione.
+                </p>
+            </div>
+            <div class="card card-4">
+                <img src="imagens/blacksabbath1.jpg" alt="">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos facere eveniet ratione.
+                </p>
+            </div>
+        </article>
+        <aside id="banner">
+            banner
+        </aside>
+    </main>
+    <footer>
+        footer
+    </footer>
+
+<!--
+    <script>
+        let menuIsOpened = false;
+        const button = document.querySelector('nav ul#button');
+        const menu = document.querySelector('nav ul#menu');
+
+        button.addEventListener("click", () => {
+            if (!menuIsOpened) {
+                menu.style.display = 'flex';
+                menuIsOpened = true;
+            } else {
+                menu.style.display = 'none';
+                menuIsOpened = false;
+            }
+        })
+
+        button.removeEventListener('click', this.onClick);
+    </script>
+-->
+</body>
+</html>

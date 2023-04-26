@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'logo';
+    src: url('../fonts/SedgwickAveDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #7EA1C4;
+    --cor1: #6D8CAB;
+    --cor2: #556D85;
+    --cor3: #2C3845;
+    --cor4: #1B365C;
+
+}
 
 * {
     margin: 0;
@@ -10,7 +24,6 @@
 html, body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    background-color: #c0c0c0;
 }
 
 /* inicio do cabeçalho e menu */
@@ -19,7 +32,13 @@ header {
     max-width: 1120px;
     height: 75px;
     margin: 0 auto;
-    background: rgb(37, 37, 37);
+    background: var(--cor0);
+}
+
+.logo {
+    font-family: 'logo', cursive;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -41,14 +60,16 @@ nav ul li a {
     display: block;
     padding: 2px 0;
     transition: 0.5s;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.479);
 }
 
 nav ul li a:hover {
-    color: #525252;
+    color: var(--cor4);
 }
 
 nav ul#menu {
-    background: rgb(37, 37, 37);
+    background: var(--cor1);
     padding: 15px;
     text-align: center;
 
@@ -83,7 +104,7 @@ nav ul#button li {
 }
 
 nav ul#button:hover li {
-    background: #515152;
+    background: var(--cor3);
 }
 
 /* fim do cabeçalho e menu */
@@ -92,61 +113,55 @@ nav ul#button:hover li {
 main {
     max-width: 1120px;
     margin: 0 auto;
+    padding: 2px;
 
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 2px;
 }
 
 article#conteudo {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 3px;
-    width: 100%;
-    background-color: aquamarine;
+    gap: 2px;
 }
 
-section.cards {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
+.card {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.card > h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 1px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    
+}
+
+.card > img {
     width: 100%;
 }
 
-section.cards > div.card {
-    display: block;
-    background-color: #c0c0c0;
+.card > p {
     width: 100%;
+    margin-top: 1px;
+    border-top: 1px solid black;
+    text-align: center;
+    
 }
 
-section.artigo {
-    display: block;
+
+.artigo {
     width: 100%;
-    background-color: #969696;
 }
 
 aside#banner {
-    display: flex;
-    width: 100%;
-    background-color: rgb(179, 180, 180);
-
-}
-
-/* cadrs aside */
-.item1 {
-    order: 1;
-}
-
-.item2 {
-    order: 2;
-}
-
-.item3 {
-    order: 3;
-}
-
-.item4 {
-    order: 4;
+    width: 30%;
 }
 
 
@@ -161,6 +176,3 @@ footer {
     color: white;
 }
 /* fim do do rodape */
-
-/* cadrs aside */
-
