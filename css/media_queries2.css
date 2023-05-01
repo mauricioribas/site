@@ -7,17 +7,8 @@
 }
 
 @media screen and (min-width: 600px) {
-    main {
-        flex-direction: row;
-    }
-
-    article#conteudo {
-        width: 70%;
-        flex-wrap: wrap;
-    }
-
     .card {
-        width: 49%;
+        width: 48%;
     }
 
     .card-3 {
@@ -57,19 +48,16 @@
         display: none;
     }
 
-    .card {
-        width: 24%;
+    main {
+        flex-direction: row;
     }
 
-    .card-3 {
-        order: 3;
-    }
-    
-    .card-4 {
-        order: 4;
-    }    
-    .artigo {
-        order: 5;
+    article#conteudo {
+        width: 70%;
+        flex-wrap: wrap;
     }
 
+    aside#banner {
+        width: 30%;
+    }
 }
